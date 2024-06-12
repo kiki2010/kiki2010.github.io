@@ -1,11 +1,193 @@
 <!DOCTYPE html>
+<!--ACLARACION: en algunas partes no puse imagenes, me gustaría añadirlas luego!-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KikiWeb</title>
-</head>
-<body>
+    <title>KikiNews</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Tipografias-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header style="margin: 0%;">
+        <!--Columnas para una mejor orgnaización-->
+        <div class="container">
+            <div class="row" style="margin: 0.1%;">
+                <div class="col" style="margin: auto;">
+                    <article>
+                        <img src="imagenes/header/Logo1.png" alt="Logo Web" class="HeaderImg">
+                    </article>
+                </div>
+                <div class="col text-center">
+                    <nav class="row">
+                        <div class="col" style="margin: 1%;">
+                            <a href=""><img src="imagenes/header/Youtube.png" alt="youtube" class="HeaderImgLogo"  style="margin-top: 4%; width: 75%;"></a>
+                        </div>
+
+                        <div class="col" style="margin: 1%;">
+                            <a href=""><img src="imagenes/header/Instagram.png" alt="instagram" class="HeaderImgLogo"></a>
+                        </div>
+
+                        <div class="col" style="margin: 1%">
+                            <a href=""><img src="imagenes/header/Tiktok.png" alt="tiktok" class="HeaderImgLogo"></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="margin: 3%; ">
+            <div class="container"  style="background-color: #464541; border-radius: 15px; overflow: hidden;">
+                <section class="row" style="margin: 3%;">
+                    <h2 class="text-light">Proyectos principales</h2>
+                    <article class="col">
+                        <img src="imagenes/ProyectosPrincipales/wall-e mascota.jpg" alt="Wall-e" class="ImgProyectosPrincipales">
+                        <p class="text-light">Wall-e</p>
+                    </article>
+                    <article class="col">
+                        <img src="imagenes/ProyectosPrincipales/R2D2.jpg" alt="R2D2" class="ImgProyectosPrincipales">
+                        <p class="text-light">R2D2</p>
+                    </article>
+                    <article  class="col">
+                        <img src="imagenes/ProyectosPrincipales/Youtube Logo.png" alt="Kiki en Youtube" class="ImgProyectosPrincipales">
+                        <p class="text-light">Canal</p>
+                    </article>
+
+                    <div class="col" style="margin-bottom: 3%; margin-right: 1%; margin-left: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <h2>Novedades</h2>
+
+                        <section id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+                            <div class="carousel-inner">
+                                <article class="carousel-item active">
+                                    <img src="imagenes/ProyectosPrincipales/RandomPlay.jpg" alt="RandomPlay" class="ImgProyectosPrincipales">
+                                    <p  class="d-block w-100" >Random Play 2024</p>
+                                </article>
+                                <article class="carousel-item">
+                                    <img src="imagenes/ProyectosPrincipales/2000 subs.png" alt="2000 subs" class="ImgProyectosPrincipales">
+                                    <p  class="d-block w-100" >2000 en youtube</p>
+                                </article>
+                                <article class="carousel-item">
+                                    <img src="imagenes/ProyectosPrincipales/Practicarlos.jpg" alt="Practicarlos" class="ImgProyectosPrincipales">
+                                    <p  class="d-block w-100" >Practicarlos</p>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container" style="background-color: #464541; border-radius: 15px;">
+                <section class="row" style="margin: 3%;">
+                    <h2 class="text-light">Tutoriales</h2>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nobis, tenetur temporibus magni magnam ut laborum sapiente illum laboriosam facere modi aspernatur, delectus molestiae sit, eaque debitis odio fuga quibusdam!</p>
+                    </article>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi autem, debitis eveniet commodi magnam at doloremque corrupti, quidem, similique dolor labore. Illum eligendi eveniet quisquam fugiat rem? Ipsum, unde!</p>
+                    </article>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore voluptas aperiam totam libero, quasi a. Atque, ex nobis consectetur, quos quo et dolore facilis est minima reiciendis repellat perspiciatis!</p>
+                    </article>
+
+                    <aside class="col" style="margin: 2%; background-color: #c9c9c9; border-radius: 15px;">
+                        <h2>Memes</h2>
+
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <article class="carousel-item active">
+                                    <p>meme1</p>
+                                </article>
+                                <article class="carousel-item">
+                                    <p>meme2</p>
+                                </article>
+                                <article class="carousel-item ">
+                                    <p>meme3</p>
+                                </article>
+                            </div>
+                        </div>
+                    </aside>
+
+                </section>
+            </div>
+
+            <div class="container" style="background-color: #464541; border-radius: 15px;">
+                <section class="row" style="margin: 3%;">
+                    <h2 class="text-light">Juegos</h2>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <h4>Brawl Stars</h4>
+                    </article>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <h4>Minecraft</h4>
+                    </article>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <h4>Roblox</h4>
+                    </article>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <h4>Project Sekai</h4>
+                    </article>
+                    <article class="col" style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <h4>Más</h4>
+                    </article>
+                </section>
+            </div>
+
+            <div class="container"  style="background-color: #464541; border-radius: 15px;">
+                <section class="row" style="margin: 3%;">
+                    <h2 class="text-light">Otros artículos de interes</h2>
+                    <article class="col"  style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis id omnis voluptatem porro, voluptatibus, explicabo deleniti odio mollitia magnam, earum distinctio maiores possimus! Ad adipisci repudiandae reprehenderit rem totam error.</p>
+                    </article>
+                    <article class="col"  style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eaque nam sapiente dolore quia quod delectus. Maiores consequatur dolorum voluptate repudiandae odio! Natus et ratione minus recusandae, repellendus praesentium libero?</p>
+                    </article>
+                    <article class="col"  style="margin: 1%; background-color: #c9c9c9; border-radius: 15px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo temporibus voluptatum ipsa ipsam quaerat, maxime ex, similique architecto laborum velit dolorum ut. Autem natus nobis maiores dolorum fuga ullam consequatur?</p>
+                    </article>
+                </section>
+            </div>
+
+        <footer style=" margin: 2%;">
+            <div class="container" style="background-color: #464541; border-radius: 15px;">
+                <form action="" class="row">
+                    <h2 class="text-light">Suscribete para recibir novedades!!!</h2>
+                    
+                    <div style="margin: 1%;" class="col form-control text-center my-3">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre aquí">
+                    </div>
+
+                    <div style="margin: 1%;" class="col form-control text-center my-3">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu email aquí">
+                    </div>
+
+                    <div class="my-3 text-end text-light">
+                        <button class="btn btn-info">
+                            <p class="my-1 mx-1 text-center text-light">Registrarme</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+
+    </main>
+
+    <footer style="background-color: #27251E;">
+        <h5 class="text-light">Sitio Web creado por Kiki! durante el taller de Otoño Chicas Digitalers 2024</h>
+    </footer>
+
+    <!--JS bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
