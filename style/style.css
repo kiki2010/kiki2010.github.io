@@ -26,3 +26,12 @@ h2{
 p{
     font-family: "Montserrat", sans-serif;
 }
+
+.Articulo{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.Articulo:hover{
+    transform: scale(1.2);
+}
