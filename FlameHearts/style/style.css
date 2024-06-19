@@ -1,0 +1,33 @@
+.col{
+    margin: 5%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.copete{
+    margin: 3%;
+    text-align: left;
+}
+
+.epigrafe{
+    margin-right: 10%;
+    text-align: end;
+}
+
+.parrafo{
+    text-align: left;
+    margin: 1.5%;
+}
+
+.video{
+    margin-top: -5% ;
+    margin: 3%
+}
+
+.epigrafeVideos{
+    margin-right: 20%;
+    text-align: end;
+    margin-bottom: -5%;
+}
