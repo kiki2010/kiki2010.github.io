@@ -24,6 +24,7 @@
 }
 
 .video{
+    margin-bottom: -5%;
     margin-top: -5% ;
     margin: 3%
 }
@@ -31,5 +32,4 @@
 .epigrafeVideos{
     margin-right: 20%;
     text-align: end;
-    margin-bottom: -5%;
 }
