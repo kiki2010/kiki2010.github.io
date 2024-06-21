@@ -1,5 +1,17 @@
+.imagenHeader{
+    height: auto;
+    width: 40%;
+    margin-left: 10%;
+    margin-bottom: -5%;
+}
+
+.imagenHeaderLogo{
+    width: 50%;
+    margin: auto;
+}
+
 .col{
-    margin: 5%;
+    margin: 0%;
 }
 
 .titulo{
