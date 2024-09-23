@@ -1,3 +1,10 @@
+.custom-carousel {
+    max-width: 50%; /* Ajusta el tamaño del carrusel */
+    margin: 1.5% auto; /* Centra el carrusel */
+    border: 5px; /* Agrega un borde azul al carrusel */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para dar efecto */
+}
 
 .timeline {
     position: relative;
