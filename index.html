@@ -9,20 +9,20 @@
 </head>
 <body>
     <!--Titulo-->
-    <div class="row" style="margin: 1.5%;">
-        <div class="col" style="text-align: center; align-items: center; margin: 5%;">
+    <div class="row" style="margin: 1.5%; background: radial-gradient(circle, rgba(255, 0, 0, 0.7), #ffde59)">
+        <div class="col rounded" style="text-align: center; align-items: center; margin: 5%; background-color: white; border-style: outset;">
             <h1 style="font-size: 250%;">Chiara Angelina <br> Catalini Monsú</h1>
             <h1 style="font-size: 250%;">Kiki!</h2>
         </div>
-        <div class="col text-center" style="margin: auto; align-items: center;">
+        <div class="col text-center irregular-border" style="margin: auto; align-items: center;">
             <img src="fotos/Foto1.png" class="img-thumbnail rounded" alt="foto de Chiara" style="height: auto; width: 40%;">
         </div>
     </div>
 
     <!--Descripciones-->
-    <div class="d-flex justify-content-center align-items-center">
-        <div class="card" style="width: 25rem;">
-            <img src="fotos/Kikifoto.jpg" class="card-img-top" style="height: auto; width: auto;">
+    <div class="d-flex justify-content-center align-items-center margin: 2%;">
+        <div class="card" style="width: 25rem; padding: 1.5%; background-color: #ffde59;">
+            <img src="fotos/Kikifoto.jpg" class="card-img-top rounded" style="height: auto; width: auto;">
             <div class="card-body alight-text-start">
                 <h3 class="card-title">¿Quién soy?</h3>
                 <p class="card-text" style="font-size: large;">
@@ -30,70 +30,55 @@
                     Mediante la robótica y la programación encontré una manera de hacerlo realidad.
                     Siempre subo todo el proceso de mis proyectos en Youtube!
                 </p>
-                <a href="https://www.youtube.com/@kiki--" class="btn btn-primary">Visita el Canal de Kiki!</a>
+                <a href="https://www.youtube.com/@kiki--" class="btn btn-light">Visita el Canal de Kiki!</a>
             </div>        
         </div>
     </div>
 
     <!--Proyectos-->
-    <div class="text-center">
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <h2>proyecto 1</h2>
-                </div>
-            </div>
-    
-            <div class="col">
-                <div class="card">
-                    <h2>proyecto 2</h2>
-                </div>
-            </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <!--Indicadores del carrusel-->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <h2>proyecto 3</h2>
-                </div>
+        <div class="carousel-inner">
+            <!--Primer item-->
+          <div class="carousel-item active">
+            <img src="fotos/wall-e.png" class="d-block w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wall-e</h5>
+              <p>El famoso robot en la vida real!</p>
             </div>
-    
-            <div class="col">
-                <div class="card" style="background-color: antiquewhite;">
-                    <h2>proyecto 4</h2>
-                </div>
+          </div>
+          <!--Segundo item-->
+          <div class="carousel-item">
+            <img src="fotos/r2d2.png" class="d-block w-50 alight-text-start" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>R2D2</h5>
+              <p>Revive la películas de StarWars con el seguidor de lineas más simpático.</p>
             </div>
+          </div>
+          <!--tercer item-->
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>FlameFighters</h5>
+              <p>Una app para que juntos luchemos contra los incendios forestales.</p>
+            </div>
+          </div>
         </div>
-    </div>
-
-    <!--Otros Proyectos de los cuales fuí parte-->
-    <div class="text-center" style="background-color: bisque;">
-        <div class="row" style="background-color: aquamarine;">
-            <div class="col" style="background-color: beige;">
-                <div class="card" style="background-color: burlywood;">
-                    <h2>Proyecto 1</h2>
-                </div>
-            </div>
-
-            <div class="col" style="background-color: beige;">
-                <div class="card" style="background-color: burlywood;">
-                    <h2>Proyecto 2</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="background-color: aquamarine;">
-            <div class="col" style="background-color: beige;">
-                <div class="card" style="background-color: burlywood;"> 
-                    <h2>Proyecto 1</h2>
-                </div>
-            </div>
-            <div class="col" style="background-color: beige;">
-                <div class="card" style="background-color: burlywood;">
-                    <h2>Proyecto 2</h2>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!--botones del carrusel-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
 
     <!--Linea de tiempo-->
     <div>
@@ -137,5 +122,7 @@
         <h2>Instagram: @Chiara2010</h2>
         <h2>Github:Kiki2010</h2>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
