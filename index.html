@@ -3,131 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiki</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>Chiara Catalini</title>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="style/stryles.css">
 </head>
 <body>
-    <!--Titulo-->
-    <div class="row" style="margin: 1.5%; background: radial-gradient(circle, rgba(255, 0, 0, 0.7), #ffde59)">
-        <div class="col rounded" style="text-align: center; align-items: center; margin: 5%; background-color: white; border-style: outset;">
-            <h1 style="font-size: 250%;">Chiara Angelina <br> Catalini Monsú</h1>
-            <h1 style="font-size: 250%;">Kiki!</h2>
-        </div>
-        <div class="col text-center irregular-border" style="margin: auto; align-items: center;">
-            <img src="fotos/Foto1.png" class="img-thumbnail rounded" alt="foto de Chiara" style="height: auto; width: 40%;">
-        </div>
-    </div>
-
-    <!--Descripciones-->
-    <div class="d-flex justify-content-center align-items-center margin: 2%;">
-        <div class="card" style="width: 25rem; padding: 1.5%; background-color: #ffde59;">
-            <img src="fotos/Kikifoto.jpg" class="card-img-top rounded" style="height: auto; width: auto;">
-            <div class="card-body alight-text-start">
-                <h3 class="card-title">¿Quién soy?</h3>
-                <p class="card-text" style="font-size: large;">
-                    Me dicen Kiki! <br> Desde muy pequeña me encanta hacer mis ideas realidad.
-                    Mediante la robótica y la programación encontré una manera de hacerlo realidad.
-                    Siempre subo todo el proceso de mis proyectos en Youtube!
-                </p>
-                <a href="https://www.youtube.com/@kiki--" class="btn btn-light">Visita el Canal de Kiki!</a>
-            </div>        
-        </div>
-    </div>
-
-    <!--Proyectos-->
-    <div id="carouselExampleCaptions" class="carousel slide custom-carousel" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Primer item -->
-          <div class="carousel-item active">
-            <img src="fotos/wall-e.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block rounded" style="background-color: #992800;">
-              <h5>Wall-e</h5>
-              <p>El famoso robot en la vida real!</p>
+    <!--Header of the web-->
+    <header>
+        <!--Cool Profile Card-->
+        <div class="profile-card">
+            <img src="img/DSC_2581.JPG" alt="profile picture" class="avatar">
+            <div class="name-box">
+                <h3>Chiara Catalini</h3>
+                <h1>Kiki!</h1>
             </div>
-          </div>
-          <!-- Segundo item -->
-          <div class="carousel-item">
-            <img src="fotos/r2d2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block rounded" style="background-color: #992800;">
-              <h5>R2D2</h5>
-              <p>Revive las películas de StarWars con el seguidor de líneas más simpático.</p>
-            </div>
-          </div>
-          <!-- Tercer item -->
-          <div class="carousel-item">
-            <img src="fotos/r2d2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block rounded" style="background-color: #992800;">
-              <h5>FlameFighters</h5>
-              <p>Una app para que juntos luchemos contra los incendios forestales.</p>
-            </div>
-          </div>
         </div>
-        <!-- Botones del carrusel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
-
-    <!--Linea de tiempo-->
-    <div>
-        <h2>¿Quieres conocer más sobre estos proyectos?</h2>
-        <p>Visita la cronología completa aquí!</p>
-    </div>
-
-    <!--Cursos, Charlas y premios-->
-    <div>
-        <div id="carouselExampleCaptions" class="carousel slide custom-carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <!-- Primer item -->
-              <div class="carousel-item active">
-                <img src="fotos/wall-e.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block rounded" style="background-color: #992800;">
-                  <h5>Random Play 2024</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ex nisi impedit asperiores explicabo nesciunt eligendi quam ullam nostrum, magnam deleniti vero atque expedita dolor minus dolore voluptatum? Exercitationem, praesentium.</p>
+    </header>
+    <!--Main Section-->
+    <main>
+        <!--Buttons for selecting category-->
+        <div class="button-group">
+            <button class="theme-button" onclick="showCategory('apps')">📱</button>
+            <button class="theme-button" onclick="showCategory('robots')">🤖</button>
+            <button class="theme-button" onclick="showCategory('extra')">➕</button>
+        </div>
+        <!--Show cool facts about me :D-->
+        <div class="display-projects" id="projects-display">
+            <p class="placeholder" id="typed-text">Select a Category...</p>
+        </div>
+        <!--Contact Card-->
+        <div class="contact-card">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2>Contact Kiki!</h2>
+                    <a href="https://www.youtube.com/@kiki--" target="_blank">
+                        <button>
+                            <i class="fab fa-youtube"></i> 
+                            Youtube: @Kiki--
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/chiarita1000/" target="_blank">
+                        <button>
+                            <i class="fab fa-instagram"></i>
+                            Instagram: @Chiarita1000
+                        </button>
+                    </a>
+                    <a href="https://x.com/CataliniCh90469">
+                        <button>
+                            <i class="fab fa-x-twitter"></i>
+                            X: @CataliniCh90469
+                        </button>
+                    </a>
+                    <a href="https://www.tiktok.com/@chiarita1000?is_from_webapp=1&sender_device=pc" target="_blank">
+                        <button>
+                            <i class="fab fa-tiktok"></i>
+                            Tiktok: @Chiarita1000
+                        </button>
+                    </a>
+                    <a href="https://www.twitch.tv/kikispeedcuber" target="_blank">
+                        <button>
+                            <i class="fab fa-twitch"></i>
+                            Twitch: kikispeedcuber
+                        </button>
+                    </a>
+                    <a href="mailto:chiaraangelinacatalini@gmail.com">
+                        <button>
+                            Mail: chiaraangelinacatalini@gmail.com
+                        </button>
+                    </a>
                 </div>
-              </div>
-              <!-- Segundo item -->
-              <div class="carousel-item">
-                <img src="fotos/r2d2.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block rounded" style="background-color: #992800;">
-                  <h5>Technovation Girls 2024</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem et natus amet perspiciatis quas hic nesciunt nostrum nisi est minus, accusamus provident ea quam quos dolore porro debitis. Recusandae, assumenda?</p>
-                </div>
-              </div>
-              <!-- Tercer item -->
-              <div class="carousel-item">
-                <img src="fotos/r2d2.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block rounded" style="background-color: #992800;">
-                  <h5>Practicarlos 2023</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, facilis, inventore quam voluptate vero, dolores culpa pariatur eveniet optio fugiat dolor nemo laboriosam tempora asperiores nostrum temporibus. Facere, minima dolor.</p>
-                </div>
-              </div>
+                <img src="img\contact\contacto.jpg" alt="kiki-photo" class="contact-avatar">
             </div>
-            <!-- Botones del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
-
-    <!--Contacto-->
-    <div class="">
-        <h2>Instagram: @Chiara2010</h2>
-        <h2>Github:Kiki2010</h2>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--Hobbies-->
+        <div class="hobby-card">
+            <div class="hobby-group">
+                <h2>SpeedCubing</h2>
+                <div class="photo-group">
+                    <img src="img\hobby\speedcubing\riocuarto1.jpg" alt="" class="photo-frame">
+                    <img src="img\hobby\speedcubing\riocuarto2.jpg" alt="" class="photo-frame">
+                    <img src="img\hobby\speedcubing\riocuarto3.jpg" alt="" class="photo-frame">
+                    <img src="img\hobby\speedcubing\vcp1.jpg" alt="" class="photo-frame">
+                    <img src="img\hobby\speedcubing\vcp2.jpg" alt="" class="photo-frame">
+                    <img src="img\hobby\speedcubing\altagracia1.jpg" alt="" class="photo-frame">
+                    <img src="img\hobby\speedcubing\altagracia2.jpg" alt="" class="photo-frame">
+                    <button class="btnmore" onclick="showMorecubes(this)">➕</button>
+                </div>
+            </div>
+            <div class="hobby-group">
+                <h2>VideoGames</h2>
+                <div class="photo-group">
+                    <img src="img\hobby\games\games (3).png" alt="" class="photo-frame">
+                    <img src="img\hobby\games\games (4).png" alt="" class="photo-frame">
+                    <img src="img\hobby\games\games (2).png" alt="" class="photo-frame">
+                    <img src="img\hobby\games\games (1).png" alt="" class="photo-frame">
+                    <img src="img\hobby\games\games (5).png" alt="" class="photo-frame">
+                    <img src="img\hobby\games\games (6).png" alt="" class="photo-frame">
+                    <button class="btnmore" onclick="showMoreGames(this)">➕</button>
+                </div>
+            </div>
+            <div class="hobby-group">
+                <h2>Photography</h2>
+                <div class="photo-group">
+                    <img src="img\hobby\photography\FOTO (1).JPG" alt="" class="photo-frame">
+                    <img src="img\hobby\photography\FOTO (2).JPG" alt="" class="photo-frame">
+                    <img src="img\hobby\photography\FOTO (5).JPG" alt="" class="photo-frame">
+                    <img src="img\hobby\photography\FOTO (24).JPG" alt="" class="photo-frame">
+                    <img src="img\hobby\photography\FOTO (14).JPG" alt="" class="photo-frame">
+                    <img src="img\hobby\photography\FOTO (13).JPG" alt="" class="photo-frame">
+                    <button class="btnmore" onclick="showMorePhoto(this)">➕</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer with slack linked-->
+    <footer>
+        <div>
+            <h3>Made by <a href="https://hackclub.slack.com/team/U07D93G63E1">@Chiara</a></h3>
+        </div>
+    </footer>
+    <!--Icons Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </body>
 </html>
