@@ -299,6 +299,49 @@ const projectData = {
       award: "",
       download: "https://youtu.be/5OqA0G57u4M?si=iGZkT7lVXnjDxftl",
     },
+    {
+      title: "2025: Codificadas",
+      description: "Primera experiencia de programación competitiva.",
+      image: "img/events/2025_11.jpg",
+      award: "",
+      download: "https://www.youtube.com/shorts/_9l7YoYu25I",
+    },
+    {
+      title: "2025: Hackathon: Parthenon",
+      description: "Uno de los Hackathones más grandes para chicas y estudiantes no binarios.",
+      image: "img/events/2025_8.png",
+      award: "",
+      download: "https://parthenon.hackclub.com/guide",
+      link2: ""
+    },
+    {
+      title: "2025: Taller Laudato Si'",
+      description: "Presentamos la iniciativa en la Parroquia San José, mostrando como la participación comunitaria es clave para resolver problemas locales.",
+      image: "img/events/2025_9.jpeg",
+      award: "",
+      download: "https://www.youtube.com/shorts/xzRScB-88R4",
+    },
+    {
+      title: "2025: Semifinalista: IE Junior Venture Day Córdoba 2025",
+      description: "Junto con Akari presentamos la aplicación RiverStream, pasando a las Semifinales de IE Junior Venture Day Córdoba 2025",
+      image: "img/events/2025_10.jpeg",
+      award: "Semifinalista",
+      download: "",
+    },
+    {
+      title: "2025: Finalistas: IE Junior Venture Day Córdoba 2025",
+      description: "Junto con Akari presentamos la aplicación RiverStream, pasando a las Semifinales de IE Junior Venture Day Córdoba 2025",
+      image: "img/events/2025_12.png",
+      award: "Finalista",
+      download: "",
+    },
+    {
+      title: "2025: Tercer Encuentro de Innovadores Tecnológicos ",
+      description: "Presentamos los proyectos del Club STEAM, participamos en la batalla de sumoBot y laberinto.",
+      image: "img/events/2025_13.jpeg",
+      award: "",
+      download: "",
+    },
   ]
 }
 //Index of the current project displayed nad currently selected category
@@ -442,3 +485,4 @@ function showMorePhoto(button) {
   button.style.display = 'none';
   window.location.href = 'collage.html';
 }
+
