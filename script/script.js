@@ -355,7 +355,7 @@ const projectData = {
       description: "Presentaron su nueva aplicación “Multirisk” que puede prever y dar aviso en caso de incendios forestales o inundaciones.",
       image: "img/events/2026.jpeg",
       award: "",
-      download: "https://www.instagram.com/reel/DUtmCQqEjx_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      download: "https://www.instagram.com/p/DUtmCQqEjx_/",
       link2: "",
     },
     {
