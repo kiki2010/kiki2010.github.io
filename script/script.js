@@ -348,7 +348,7 @@ const projectData = {
       image: "img/events/2025_14.png",
       award: "",
       download: "https://www.instagram.com/p/DTJekcmj2f4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      link2: "",
+      link2: "https://kiki2010.github.io/SHAKTHISAT",
     },
     {
       title: "2026: Mujer y niña en la ciencia Villa Carlos Paz.",
