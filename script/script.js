@@ -342,6 +342,30 @@ const projectData = {
       award: "",
       download: "",
     },
+    {
+      title: "2025: SHAKTHISAT ",
+      description: "Complete los 21 módulos del curso Shakthisat!",
+      image: "img/events/2025_14.png",
+      award: "",
+      download: "https://www.instagram.com/p/DTJekcmj2f4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      link2: "",
+    },
+    {
+      title: "2026: Mujer y niña en la ciencia Villa Carlos Paz.",
+      description: "Presentaron su nueva aplicación “Multirisk” que puede prever y dar aviso en caso de incendios forestales o inundaciones.",
+      image: "img/events/2026.jpeg",
+      award: "",
+      download: "https://www.instagram.com/reel/DUtmCQqEjx_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      link2: "",
+    },
+    {
+      title: "2026: Mujer y niña en la ciencia FCEFyN.",
+      description: "“Ciencia con Voz de Mujer: De la Idea al Impacto”, en el marco del Día Internacional de la Mujer y la Niña en la Ciencia. 👩🏻‍🔬💜",
+      image: "img/events/2026_1.jpeg",
+      award: "",
+      download: "https://www.instagram.com/p/DUtG3chkcU3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      link2: "",
+    },
   ]
 }
 //Index of the current project displayed nad currently selected category
