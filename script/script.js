@@ -296,7 +296,7 @@ const projectData = {
       title: "2025: Mercociudades: Encuentro de educación ambiental en Despeñaderos",
       description: "Comentando sobre la app RiverStream y su impacto a nivel local y global.",
       image: "img/events/2025_5.png",
-      award: "",
+      award: "https://carlospaznoticias.com/amplia_noti.php?id_noti=8793",
       download: "https://youtu.be/5OqA0G57u4M?si=iGZkT7lVXnjDxftl",
     },
     {
