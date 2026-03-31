@@ -366,6 +366,22 @@ const projectData = {
       download: "https://www.instagram.com/p/DUtG3chkcU3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       link2: "",
     },
+    {
+      title: "2026: Club de ciencias en el IRESM.",
+      description: "Con los ingresantes a la carrera de Analista de Sistemas.",
+      image: "img/events/2026_2.jpeg",
+      award: "",
+      download: "https://youtube.com/shorts/uBpMwNElF7k",
+      link2: "",
+    },
+    {
+      title: "2026: Mantenimiento de la estación meteorológica del IPEM 359.",
+      description: "Reemplazo de pluviometro y fuente.",
+      image: "img/events/2026_3.jpeg",
+      award: "",
+      download: "https://youtube.com/shorts/5wj-vzuGX18",
+      link2: "",
+    }, 
   ]
 }
 //Index of the current project displayed nad currently selected category
