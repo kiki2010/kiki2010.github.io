@@ -4,125 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chiara Catalini</title>
-    <script src="script/script.js"></script>
-    <link rel="stylesheet" href="style/stryles.css">
+    <script src="script/projects.js" defer></script>
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Header of the web-->
-    <header>
-        <!--Cool Profile Card-->
-        <div class="profile-card">
-            <img src="img/DSC_2581.JPG" alt="profile picture" class="avatar">
-            <div class="name-box">
+    <div class="bento">
+        <div class="kikiprofile">
+            <div class="avatar">
+                <img src="img/DSC_2581.JPG" alt="Kiki">
+            </div>
+
+            <div class="textspace">
                 <h3>Chiara Catalini</h3>
                 <h1>Kiki!</h1>
+
+                <p>Soy fan del autoaprendizaje, me encanta la robótica y la programación. Siento que cada uno tiene que hacer su parte para el cuidado del ambiente.</p>
             </div>
         </div>
-    </header>
-    <!--Main Section-->
-    <main>
-        <!--Buttons for selecting category-->
-        <div class="button-group">
-            <button class="theme-button" onclick="showCategory('apps')">📱</button>
-            <button class="theme-button" onclick="showCategory('robots')">🤖</button>
-            <button class="theme-button" onclick="showCategory('extra')">➕</button>
+
+        <div class="apps-card">
+            <h3>Apps</h3>
+            
+            <div class="apps-grid">
+
+                <a href="https://www.instagram.com/cbamultirisk/" class="app-item">
+                    <img src="img/apps/multiRisk.png" alt="">
+                    <span>MultiRisk</span>
+                    <h3>2026</h3>
+                </a>
+
+                <a href="https://www.instagram.com/riverstream_jparg/" class="app-item">
+                    <img src="img/apps/riverstream.png" alt="">
+                    <span>RiverStream</span>
+                    <h3>2025</h3>
+                </a>
+
+                <a href="https://www.instagram.com/flamefighters_arg/" class="app-item">
+                    <img src="img/apps/FlameFighters.png" alt="">
+                    <span>Flamefighters</span>
+                    <h3>2024</h3>
+                </a>
+            </div>
         </div>
-        <!--Show cool facts about me :D-->
-        <div class="display-projects" id="projects-display">
-            <p class="placeholder" id="typed-text">Select a Category...</p>
+
+        <div class="robotics-card">
+            <h3>Robots</h3>
+            
+            <div class="robots-grid">
+
+                <a href="https://github.com/kiki2010/KikiCube" class="robot-item">
+                    <img src="img/robots/kikicube.jpg" alt="">
+                    <span>KikiCube</span>
+                    <h3>2025</h3>
+                </a>
+
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTYyNzgyMjM5NzA0NDE4?story_media_id=3497944079079109445_53205490499&igsh=YmJibWRzem1hN2ll" class="robot-item">
+                    <img src="img/robots/sumo.jpg" alt="">
+                    <span>KikiBot</span>
+                    <h3>2024</h3>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=K4iaySrlFJo&list=PL7ie2Y_RCl3VQk3bSd_nUX1wbGXMWMPRr&pp=gAQB" class="robot-item">
+                    <img src="img/robots/r2d2.jpg" alt="">
+                    <span>R2D2</span>
+                    <h3>2024</h3>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=LBcReW58eu0&list=PL7ie2Y_RCl3W_cpKh4Z0GaOTGP4dyDPOZ" class="robot-item">
+                    <img src="img/robots/wall-e.jpeg" alt="">
+                    <span>Wall-e</span>
+                    <h3>2023</h3>
+                </a>
+            </div>
         </div>
-        <!--Contact Card-->
-        <div class="contact-card">
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h2>Contact Kiki!</h2>
-                    <a href="https://www.youtube.com/@kiki--" target="_blank">
-                        <button>
-                            <i class="fab fa-youtube"></i> 
-                            Youtube: @Kiki--
-                        </button>
-                    </a>
-                    <a href="https://www.instagram.com/chiarita1000/" target="_blank">
-                        <button>
-                            <i class="fab fa-instagram"></i>
-                            Instagram: @Chiarita1000
-                        </button>
-                    </a>
-                    <a href="https://x.com/CataliniCh90469">
-                        <button>
-                            <i class="fab fa-x-twitter"></i>
-                            X: @CataliniCh90469
-                        </button>
-                    </a>
-                    <a href="https://www.tiktok.com/@chiarita1000?is_from_webapp=1&sender_device=pc" target="_blank">
-                        <button>
-                            <i class="fab fa-tiktok"></i>
-                            Tiktok: @Chiarita1000
-                        </button>
-                    </a>
-                    <a href="https://www.twitch.tv/kikispeedcuber" target="_blank">
-                        <button>
-                            <i class="fab fa-twitch"></i>
-                            Twitch: kikispeedcuber
-                        </button>
-                    </a>
-                    <a href="mailto:chiaraangelinacatalini@gmail.com">
-                        <button>
-                            Mail: chiaraangelinacatalini@gmail.com
-                        </button>
-                    </a>
+
+        <div class="club-card">
+            <h3>Club STEAM VCP | Since 2025</h3>
+            <p>Soy orientadora voluntaria en el primer Club Steam de Villa Carlos Paz.</p>
+
+            <div class="club-grid">
+                <a href="" class="club-item">
+                    <img src="img/club/bot.png" alt="">
+                    <span>Bots and Projects</span>
+                </a>
+                <a href="" class="club-item">
+                    <img src="img/club/charlas.png" alt="">
+                    <span>Talks</span>
+                </a>
+                <a href="" class="club-item">
+                    <img src="img/club/logo.png" alt="">
+                    <span>More</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="more">
+            <h3>Ciencia Ciudadana</h3>
+            <div class="more-grid">
+                <a href="" class="more-item">
+                    <img src="img/logos/adopto.jpg" alt="">
+                    <span>ADOPTO: un cuerpo de agua como mi mascota</span>
+                    <h3></h3>
+                </a>
+                <a href="" class="more-item">
+                    <img src="img/logos/matteo.png" alt="">
+                    <span>Proyecto Matteo</span>
+                </a>
+                <a href="" class="more-item">
+                    <img src="img/logos/logos.jpg" alt="">
+                    <span>RELAMPAGO</span>
+                    <h3></h3>
+                </a>
+                <a href="" class="more-item">
+                    <img src="img/logos/guardianes.png" alt="">
+                    <span>Guardianes del Lago</span>
+                    <h3>2022</h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="awards">
+                <h3>Premios y Reconocimientos</h3>
+                <div id="award-list"></div>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-header">
+                <h3 class="card-title">Trayectoria</h3>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn">
+                        <img src="img/style/flecha2.png" alt="">
+                    </button>
+
+                    <div class="carousel-viewport">
+                        <div class="carousel-track" id="carouselTrack"></div>
+                    </div>
+
+                    <button class="carousel-btn" id="nextBtn">
+                        <img src="img/style/flecha.png" alt="">
+                    </button>
                 </div>
-                <img src="img\contact\contacto.jpg" alt="kiki-photo" class="contact-avatar">
+            </div>
+
+
+            <div class="carosel-footer">
+                <span class="carousel-counter" id="carouselCounter"></span>
+                <div class="carousel-dots" id="carouselDots"></div>
             </div>
         </div>
-        <!--Hobbies-->
-        <div class="hobby-card">
-            <div class="hobby-group">
-                <h2>SpeedCubing</h2>
-                <div class="photo-group">
-                    <img src="img\hobby\speedcubing\riocuarto1.jpg" alt="" class="photo-frame">
-                    <img src="img\hobby\speedcubing\riocuarto2.jpg" alt="" class="photo-frame">
-                    <img src="img\hobby\speedcubing\riocuarto3.jpg" alt="" class="photo-frame">
-                    <img src="img\hobby\speedcubing\vcp1.jpg" alt="" class="photo-frame">
-                    <img src="img\hobby\speedcubing\vcp2.jpg" alt="" class="photo-frame">
-                    <img src="img\hobby\speedcubing\altagracia1.jpg" alt="" class="photo-frame">
-                    <img src="img\hobby\speedcubing\altagracia2.jpg" alt="" class="photo-frame">
-                    <button class="btnmore" onclick="showMorecubes(this)">➕</button>
-                </div>
-            </div>
-            <div class="hobby-group">
-                <h2>VideoGames</h2>
-                <div class="photo-group">
-                    <img src="img\hobby\games\games (3).png" alt="" class="photo-frame">
-                    <img src="img\hobby\games\games (4).png" alt="" class="photo-frame">
-                    <img src="img\hobby\games\games (2).png" alt="" class="photo-frame">
-                    <img src="img\hobby\games\games (1).png" alt="" class="photo-frame">
-                    <img src="img\hobby\games\games (5).png" alt="" class="photo-frame">
-                    <img src="img\hobby\games\games (6).png" alt="" class="photo-frame">
-                    <button class="btnmore" onclick="showMoreGames(this)">➕</button>
-                </div>
-            </div>
-            <div class="hobby-group">
-                <h2>Photography</h2>
-                <div class="photo-group">
-                    <img src="img\hobby\photography\FOTO (1).JPG" alt="" class="photo-frame">
-                    <img src="img\hobby\photography\FOTO (2).JPG" alt="" class="photo-frame">
-                    <img src="img\hobby\photography\FOTO (5).JPG" alt="" class="photo-frame">
-                    <img src="img\hobby\photography\FOTO (24).JPG" alt="" class="photo-frame">
-                    <img src="img\hobby\photography\FOTO (14).JPG" alt="" class="photo-frame">
-                    <img src="img\hobby\photography\FOTO (13).JPG" alt="" class="photo-frame">
-                    <button class="btnmore" onclick="showMorePhoto(this)">➕</button>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!--Footer with slack linked-->
-    <footer>
-        <div>
-            <h3>Made by <a href="https://hackclub.slack.com/team/U07D93G63E1">@Chiara</a></h3>
-        </div>
-    </footer>
-    <!--Icons Style-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </div>
 </body>
 </html>
