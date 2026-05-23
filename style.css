@@ -561,14 +561,98 @@ body {
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
+@media (max-width: 1020px) {
 
     .carousel-slide {
         flex: 0 0 calc((100% - 14px) / 2);
     }
+
+    .bento {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "hero"
+            "apps"
+            "robots"
+            "club"
+            "extra"
+            "right"
+            "time"
+        ;
+    }
+
+    .right-col {
+        padding-left: 0;
+    }
+
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .robots-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .club-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .bento {
+        gap: 12px;
+    }
+
+    .kikiprofile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .avatar img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .textspace h1 {
+        font-size: 26px;
+    }
+
+    .textspace h3 {
+        font-size: 16px;
+    }
+
+    .apps-grid,
+    .robots-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .club-grid,
+    .more-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .app-item img,
+    .club-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .robot-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .app-item span,
+    .robot-item span,
+    .club-item span {
+        font-size: 18px;
+    }
 
     .carousel-slide {
         flex: 0 0 100%;
@@ -580,3 +664,4 @@ body {
         align-items: flex-start;
     }
 }
+
