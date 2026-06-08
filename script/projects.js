@@ -396,5 +396,21 @@ const projectData = {
       download: "",
       link2: "",
     },
+    {
+      title: "2026: Visita UdeSA",
+      description: "Conocimos los laboratorios de robótica y programación.",
+      image: "img/events/2026_6.jpg",
+      award: "",
+      download: "https://youtube.com/playlist?list=PL7ie2Y_RCl3WWUOVt2yn_-1_hVORIDQ74&si=lI8muNet9T4DwI73",
+      link2: "",
+    },
+    {
+      title: "2026: 2° Congreso Educativo Ambiental",
+      description: "Presentamos Cba MultiRisk.",
+      image: "img/events/2026_7.jpeg",
+      award: "",
+      download: "",
+      link2: "",
+    },
   ]
 };
