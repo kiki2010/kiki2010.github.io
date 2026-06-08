@@ -11,6 +11,71 @@ body {
     background-blend-mode: lighten;
 }
 
+.page-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.page-wrapper .bento {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.sidebar-left,
+.sidebar-right {
+    width: 90px;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    padding-top: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+.stamp {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.stamp img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    filter: sepia(40%);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.stamp span {
+    position: absolute;
+    padding: 2px 6px;
+}
+
+.stamp:hover img {
+    filter: sepia(0%);
+    transform: rotate(-2deg) scale(1.1);
+}
+
+@media (max-width: 1020px) {
+    .sidebar-left,
+    .sidebar-right {
+        display: none;
+    }
+
+    .page-wrapper {
+        padding: 0;
+    }
+}
+
 .bento {
     display: grid;
     grid-template-columns: 2fr 1fr;
