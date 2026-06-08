@@ -389,7 +389,7 @@ const talksData = [
 function loadTalks() {
   const container = document.getElementById('talks-list');
   if (!container) return;
-  container.innerHTML = talksData.map(t => {
+  container.innerHTML = [...talksData].reverse().map(t => {
     const links = [];
     if (t.download) links.push(`<a class="talk-link-btn" href="${t.download}" target="_blank" title="Link 1">Link</a>`);
     if (t.link2) links.push(`<a class="talk-link-btn" href="${t.link2}" target="_blank" title="Link 2">Link</a>`);
