@@ -1,6 +1,20 @@
 const awardsData = [
   {
     "icon": "img/style/icon.png",
+    "year": "2026",
+    "name": "MultiRisk Finalist",
+    "org": "Technovation",
+    "link": "https://technovationchallenge.org/results/2026-season-results/"
+  },
+  {
+    "icon": "img/style/icon.png",
+    "year": "2026",
+    "name": "AI Favorite",
+    "org": "Coolest Projects",
+    "link": "https://online.coolestprojects.org/projects/22908"
+  },
+  {
+    "icon": "img/style/icon.png",
     "year": "2025",
     "name": "Regional Honoree Latin America",
     "org": "Technovation Girls",
@@ -160,7 +174,7 @@ const talksData = [
   },
   {
     title: "2023: Speaker on 'Transformando el mundo que queremos: el rol de la mujer en esa transformación'",
-    description: "A talk about wwomen and girl in science",
+    description: "A talk about women and girl in science",
     image: "img/events/2023.JPG",
     award: "",
     download: "",
@@ -381,8 +395,16 @@ const talksData = [
     description: "Presentamos Cba MultiRisk.",
     image: "img/events/2026_7.jpeg",
     award: "",
-    download: "",
+    download: "https://youtube.com/playlist?list=PLI95H1k9lX-w&si=T688YTtcxXvhaAvp",
     link2: "",
+  },
+  {
+    title: "2026: La Tertulia: Regina y Chiara, dos jóvenes mujeres apasionadas por la ciencia",
+    description: "Chiara en Cadena 3 Argentina.",
+    image: "img/events/2026_8.jpg",
+    award: "",
+    download: "https://www.youtube.com/playlist?list=PLEj4NFw9E9Jo",
+    link2: "https://www.cadena3.com/noticia/amamos-argentina/la-tertulia-regina-y-chiara-dos-jovenes-mujeres-apasionadas-por-la-ciencia_561663",
   },
 ];
 
