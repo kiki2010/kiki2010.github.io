@@ -88,7 +88,7 @@ const awardsData = [
     "year": "2024",
     "name": "FlameFighers Finalista",
     "org": "Technovation Girls",
-    "link": ""
+    "link": "https://www.technovation.org/blogs/2024-technovation-girls-finalists-and-regional-winners/"
   },
   {
     "icon": "img/style/icon.png",
