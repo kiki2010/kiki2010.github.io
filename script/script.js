@@ -406,6 +406,14 @@ const talksData = [
     download: "https://www.youtube.com/playlist?list=PLEj4NFw9E9Jo",
     link2: "https://www.cadena3.com/noticia/amamos-argentina/la-tertulia-regina-y-chiara-dos-jovenes-mujeres-apasionadas-por-la-ciencia_561663",
   },
+  {
+    title: "2026: Mision Cansat || VCP-SPACE",
+    description: "Chiara en Cadena 3 Argentina.",
+    image: "img/events/2026_9.jpeg",
+    award: "",
+    download: "",
+    link2: "",
+  }
 ];
 
 function loadTalks() {
