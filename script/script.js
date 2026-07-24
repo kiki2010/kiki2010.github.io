@@ -408,7 +408,7 @@ const talksData = [
   },
   {
     title: "2026: Mision Cansat || VCP-SPACE",
-    description: "Chiara en Cadena 3 Argentina.",
+    description: "CONAE Cansat Secundario 2026",
     image: "img/events/2026_9.jpeg",
     award: "",
     download: "https://youtu.be/bOJ1ppdOg7o?si=t_WmtA5FgzURzPwd",
