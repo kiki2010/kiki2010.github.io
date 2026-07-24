@@ -411,7 +411,7 @@ const talksData = [
     description: "Chiara en Cadena 3 Argentina.",
     image: "img/events/2026_9.jpeg",
     award: "",
-    download: "",
+    download: "https://youtu.be/bOJ1ppdOg7o?si=t_WmtA5FgzURzPwd",
     link2: "",
   }
 ];
