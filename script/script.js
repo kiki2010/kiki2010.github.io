@@ -436,20 +436,10 @@ function loadTalks() {
   }).join('');
 }
 
-//Load carousel
-let currentIndex = 0;
-let slidesPerView = getSlidesPerView();
-
-function getSlidesPerView() {
-  if (window.innerWidth <= 500) return 1;
-  if (window.innerWidth <= 860) return 2;
-  return 3;
-}
-
+//Load carousel (scroll libre + scrub bar)
 function buildCarousel() {
   const track = document.getElementById('carouselTrack');
-  const dotsContainer = document.getElementById('carouselDots');
-  if (!track || !dotsContainer) return;
+  if (!track) return;
 
   track.innerHTML = projectData.extra.map((item, i) => {
     const hasImg = item.image;
@@ -476,88 +466,106 @@ function buildCarousel() {
       </div>
   `}).join('');
 
-  const totalPages = Math.ceil(projectData.extra.length / slidesPerView);
-  dotsContainer.innerHTML = Array.from({length: totalPages}, (_, i) =>
-    `<button class="carousel-dot${i === 0 ? ' active' : ''}" data-page="${i}" aria-label="Página ${i+1}"></button>`
-  ).join('');
+  setupScrubBar();
+  updateCounter();
+}
 
-  dotsContainer.querySelectorAll('.carousel-dot').forEach(dot => {
-    dot.addEventListener('click', () => goToPage(+dot.dataset.page));
+function setupScrubBar() {
+  const viewport = document.getElementById('carouselViewport');
+  const scrubBar = document.getElementById('scrubBar');
+  const thumb = document.getElementById('scrubThumb');
+  if (!viewport || !scrubBar || !thumb) return;
+
+  function resizeThumb() {
+    const ratio = viewport.clientWidth / viewport.scrollWidth;
+    const thumbWidth = Math.max(ratio * scrubBar.clientWidth, 30);
+    thumb.style.width = thumbWidth + 'px';
+    positionThumbFromScroll();
+  }
+
+  function positionThumbFromScroll() {
+    const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    const maxThumbLeft = scrubBar.clientWidth - thumb.offsetWidth;
+    const progress = maxScroll > 0 ? viewport.scrollLeft / maxScroll : 0;
+    thumb.style.left = (progress * maxThumbLeft) + 'px';
+    updateCounter();
+  }
+
+  let dragging = false;
+  let startX = 0;
+  let startLeft = 0;
+
+  function onPointerDown(e) {
+    dragging = true;
+    startX = (e.touches ? e.touches[0].clientX : e.clientX);
+    startLeft = thumb.offsetLeft;
+    document.body.style.userSelect = 'none';
+  }
+
+  function onPointerMove(e) {
+    if (!dragging) return;
+    const clientX = (e.touches ? e.touches[0].clientX : e.clientX);
+    const delta = clientX - startX;
+    const maxThumbLeft = scrubBar.clientWidth - thumb.offsetWidth;
+    const newLeft = Math.min(Math.max(startLeft + delta, 0), maxThumbLeft);
+    thumb.style.left = newLeft + 'px';
+
+    const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    const progress = maxThumbLeft > 0 ? newLeft / maxThumbLeft : 0;
+    viewport.scrollLeft = progress * maxScroll;
+  }
+
+  function onPointerUp() {
+    dragging = false;
+    document.body.style.userSelect = '';
+  }
+
+  thumb.addEventListener('mousedown', onPointerDown);
+  thumb.addEventListener('touchstart', onPointerDown, { passive: true });
+  window.addEventListener('mousemove', onPointerMove);
+  window.addEventListener('touchmove', onPointerMove, { passive: true });
+  window.addEventListener('mouseup', onPointerUp);
+  window.addEventListener('touchend', onPointerUp);
+
+  scrubBar.addEventListener('click', (e) => {
+    if (e.target === thumb) return;
+    const rect = scrubBar.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const maxThumbLeft = scrubBar.clientWidth - thumb.offsetWidth;
+    const newLeft = Math.min(Math.max(clickX - thumb.offsetWidth / 2, 0), maxThumbLeft);
+    thumb.style.left = newLeft + 'px';
+
+    const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    const progress = maxThumbLeft > 0 ? newLeft / maxThumbLeft : 0;
+    viewport.scrollLeft = progress * maxScroll;
   });
 
-  updateCarousel();
+  viewport.addEventListener('scroll', positionThumbFromScroll);
+  window.addEventListener('resize', resizeThumb);
+
+  resizeThumb();
 }
 
-function goToPage(page) {
-  const totalPages = Math.ceil(projectData.extra.length / slidesPerView);
-  currentIndex = Math.max(0, Math.min(page, totalPages - 1));
-  updateCarousel();
-}
- 
-function updateCarousel() {
-  const track = document.getElementById('carouselTrack');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
+function updateCounter() {
+  const viewport = document.getElementById('carouselViewport');
   const counter = document.getElementById('carouselCounter');
-  const dots = document.querySelectorAll('.carousel-dot'); 
+  if (!viewport || !counter) return;
 
-  if (!track) return;
+  const slides = viewport.querySelectorAll('.carousel-slide');
+  const totalSlides = slides.length;
+  if (totalSlides === 0) return;
 
-  const totalSlides = projectData.extra.length;
-  const totalPages = Math.ceil(totalSlides / slidesPerView);
-
-  const slideWidthPx = track.parentElement.offsetWidth / slidesPerView;
-  const offset = currentIndex * track.parentElement.offsetWidth;
-
-  track.style.transform = `translateX(-${offset}px)`;
-
-  if (prevBtn) prevBtn.disabled = currentIndex === 0;
-  if (nextBtn) nextBtn.disabled = currentIndex >= totalPages - 1;
-
-  const start = currentIndex * slidesPerView + 1;
-  const end = Math.min(start + slidesPerView - 1, totalSlides);
-  if (counter) counter.textContent = `${start}–${end} / ${totalSlides}`;
-
-  dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
-}
-
-function initCarouselControls() {
-  const totalPages = Math.ceil(projectData.extra.length / slidesPerView);
-
-  document.getElementById('prevBtn')?.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--; 
-      updateCarousel();
-    }
+  const viewportLeft = viewport.scrollLeft;
+  let current = 0;
+  slides.forEach((slide, i) => {
+    if (slide.offsetLeft <= viewportLeft + 10) current = i;
   });
 
-  document.getElementById('nextBtn')?.addEventListener('click', () => {
-    if (currentIndex < totalPages - 1) {
-      currentIndex++; 
-      updateCarousel();
-    }
-  });
+  counter.textContent = `${current + 1} / ${totalSlides}`;
 }
-
-let resizeTimer;
-window.addEventListener('resize', () => {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => {
-    const newSpv = getSlidesPerView();
-    if (newSpv !== slidesPerView) {
-      slidesPerView = newSpv;
-      currentIndex = 0;
-      buildCarousel();
-      initCarouselControls();
-    } else {
-      updateCarousel();
-    }
-  }, 200);
-});
 
 document.addEventListener('DOMContentLoaded', () => {
   loadAwards();
   loadTalks();
   buildCarousel();
-  initCarouselControls();
 });
