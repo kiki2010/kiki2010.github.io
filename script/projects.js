@@ -409,7 +409,7 @@ const projectData = {
       description: "Presentamos Cba MultiRisk.",
       image: "img/events/2026_7.jpeg",
       award: "",
-      download: "",
+      download: "https://youtube.com/playlist?list=PLI95H1k9lX-w&si=J-_N3WnsJYCBIOmL",
       link2: "",
     },
   ]

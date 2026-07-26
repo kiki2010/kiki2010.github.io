@@ -396,7 +396,7 @@ const talksData = [
     image: "img/events/2026_7.jpeg",
     award: "",
     download: "https://youtube.com/playlist?list=PLI95H1k9lX-w&si=T688YTtcxXvhaAvp",
-    link2: "",
+    link2: "https://youtube.com/playlist?list=PLI95H1k9lX-w&si=J-_N3WnsJYCBIOmL",
   },
   {
     title: "2026: La Tertulia: Regina y Chiara, dos jóvenes mujeres apasionadas por la ciencia",
