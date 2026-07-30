@@ -483,7 +483,7 @@ const talksData = [
     description: "",
     image: "img/events/2026_18.png",
     award: "",
-    download: "",
+    download: "https://youtube.com/playlist?list=PLWZpUX3rMkek&si=OsAdJw5k9nJHLPmO",
     link2: "",
   }
 ];
