@@ -479,6 +479,14 @@ const talksData = [
     link2: "",
   },
   {
+    title: "2026: MultiRisk en Radio Mitre",
+    description: "",
+    image: "img/events/2026_19.jpeg",
+    award: "",
+    download: "https://www.instagram.com/reel/DbYhw29IzpQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    link2: "",
+  },
+  {
     title: "2026: La tiza Punilla || MultiRisk",
     description: "",
     image: "img/events/2026_18.png",
