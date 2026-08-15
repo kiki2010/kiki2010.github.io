@@ -412,5 +412,13 @@ const projectData = {
       download: "https://youtube.com/playlist?list=PLI95H1k9lX-w&si=J-_N3WnsJYCBIOmL",
       link2: "",
     },
+    {
+      title: "2026: Mes de las Infancias || FCEFyN",
+      description: "",
+      image: "img/events/2026_20.jpg",
+      award: "",
+      download: "https://youtube.com/playlist?list=PLRdbwTyZDYyg&si=M_iEUHvebjinD1Rh",
+      link2: "",
+    }
   ]
 };
