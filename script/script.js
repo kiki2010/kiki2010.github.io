@@ -493,6 +493,14 @@ const talksData = [
     award: "",
     download: "https://youtube.com/playlist?list=PLWZpUX3rMkek&si=OsAdJw5k9nJHLPmO",
     link2: "",
+  },
+  {
+    title: "2026: Mes de las Infancias || FCEFyN",
+    description: "",
+    image: "img/events/2026_20.jpg",
+    award: "",
+    download: "https://youtube.com/playlist?list=PLRdbwTyZDYyg&si=M_iEUHvebjinD1Rh",
+    link2: "",
   }
 ];
 
