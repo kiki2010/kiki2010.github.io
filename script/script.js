@@ -501,6 +501,14 @@ const talksData = [
     award: "",
     download: "https://youtube.com/playlist?list=PLRdbwTyZDYyg&si=M_iEUHvebjinD1Rh",
     link2: "",
+  },
+  {
+    title: "2026: Expo Carreras || VCP",
+    description: "",
+    image: "img/events/2026_21.jpeg",
+    award: "",
+    download: "https://youtube.com/playlist?list=PLBOLZHS5dX2Q&si=38jxKb7yOOGgXzKo",
+    link2: "",
   }
 ];
 
