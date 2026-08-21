@@ -332,7 +332,7 @@ const talksData = [
     description: "Presentamos los proyectos del Club STEAM, participamos en la batalla de sumoBot y laberinto.",
     image: "img/events/2025_13.jpeg",
     award: "",
-    download: "",
+    download: "https://youtube.com/playlist?list=PLJBwj9HRkqQY&si=V-MooXcOEtNbwm_j",
   },
   {
     title: "2026: Mujer y niña en la ciencia Villa Carlos Paz.",
