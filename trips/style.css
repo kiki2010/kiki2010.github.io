@@ -1,14 +1,25 @@
+
+/* =========================================
+   KIKI'S NEWS - BASE CSS
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 14px;
 
-    /*Background*/
+    /* Background */
     background-image: url(../img/style/background3.png);
     background-color: rgba(255, 255, 255, 0.65);
     background-blend-mode: lighten;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-blend-mode: lighten;
+
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .headtitle {
@@ -37,7 +48,10 @@ body {
     font-weight: 200;
 }
 
-/*Main Grid*/
+/* =========================================
+   MAIN GRID
+========================================= */
+
 .bentoSF {
     display: flex;
     gap: 28px;
@@ -182,6 +196,10 @@ body {
     font-size: 25px;
 }
 
+/* =========================================
+   GALLERY - ORIGINAL
+========================================= */
+
 .gallery-talks {
     padding-top: 14px;
     padding-bottom: 14px;
@@ -245,6 +263,8 @@ body {
     pointer-events: none;
 }
 
+/* LIGHTBOX */
+
 .lightbox {
     display: none;
     position: fixed;
@@ -288,8 +308,439 @@ body {
     line-height: 1;
 }
 
-@media (max-width: 700px) {
-    .gallery-grid {
-        columns: 2 160px;
+
+/* =========================================
+   TECHNOVATION WORLD SUMMIT 2026
+========================================= */
+
+/* MAIN CONTAINER */
+
+.trip-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* INTRO */
+
+.trip-intro {
+    text-align: center;
+    padding: 65px 20px;
+    border-bottom: 3px solid;
+}
+
+.trip-intro h1 {
+    font-family: "Cinzel Decorative", serif;
+    font-size: clamp(35px, 6vw, 65px);
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+.trip-intro p {
+    font-family: "Newsreader", serif;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.trip-intro .eyebrow {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: auto;
+}
+
+.trip-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.trip-details span {
+    border: 1px solid;
+    padding: 7px 13px;
+    font-size: 14px;
+}
+
+
+/* DAY SECTIONS */
+
+.day-section {
+    padding: 35px 0 50px;
+    border-bottom: 3px solid;
+    width: 100%;
+}
+
+.day-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.day-number {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.day-heading h2 {
+    font-family: "Cinzel Decorative", serif;
+    font-size: clamp(23px, 4vw, 36px);
+    margin: 12px 0;
+}
+
+.day-heading p {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+/* STORY LAYOUT */
+
+.story-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    align-items: start;
+    width: 100%;
+}
+
+.story-content {
+    min-width: 0;
+    text-align: justify;
+}
+
+.story-content > p {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0 0 18px;
+}
+
+
+/* =========================================
+   INSTAGRAM REELS
+========================================= */
+
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+    align-items: start;
+    width: 100%;
+}
+
+.reel {
+    min-width: 0;
+    width: 100%;
+}
+
+.reel-label {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.instagram-media {
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+}
+
+
+/* =========================================
+   POLAROID GALLERY
+========================================= */
+
+.polaroid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 22px;
+    padding: 15px 5px;
+    min-width: 0;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 10px 10px 30px;
+    width: 100%;
+    max-width: 220px;
+    margin: 0;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: sepia(20%);
+}
+
+.polaroid figcaption {
+    font-family: "Newsreader", serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 12px;
+    color: #39352f;
+}
+
+.rotate-left {
+    transform: rotate(-4deg);
+}
+
+.rotate-right {
+    transform: rotate(4deg);
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+
+/* =========================================
+   YOUTUBE
+========================================= */
+
+.video-extra {
+    margin-top: 35px;
+    width: 100%;
+}
+
+.youtube-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #e5dfd5;
+}
+
+.youtube-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    top: 0;
+    left: 0;
+}
+
+
+/* =========================================
+   ENDING
+========================================= */
+
+.trip-ending {
+    text-align: center;
+    padding: 70px 20px;
+    border-bottom: 3px solid;
+}
+
+.trip-ending .eyebrow {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.trip-ending h2 {
+    font-family: "Cinzel Decorative", serif;
+    font-size: clamp(25px, 4vw, 40px);
+    line-height: 1.5;
+}
+
+.trip-ending p {
+    font-family: "Newsreader", serif;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.ending-signature {
+    display: block;
+    font-family: "Newsreader", serif;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+/* =========================================
+   RESPONSIVE - TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .story-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
+
+    .polaroid-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 750px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .polaroid {
+        width: 100%;
+        max-width: 210px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .headtitle {
+        padding: 15px 5px;
+    }
+
+    .headtitle h2 {
+        font-size: 32px;
+    }
+
+    .shortdescription {
+        font-size: 14px;
+    }
+
+    .trip-container {
+        padding: 10px 0;
+        gap: 20px;
+    }
+
+    .trip-intro {
+        padding: 40px 10px;
+    }
+
+    .trip-intro h1 {
+        font-size: 36px;
+    }
+
+    .trip-intro p {
+        font-size: 17px;
+    }
+
+    .trip-details {
+        gap: 8px;
+    }
+
+    .trip-details span {
+        font-size: 12px;
+    }
+
+    .day-section {
+        padding: 30px 0 40px;
+    }
+
+    .day-heading {
+        margin-bottom: 25px;
+    }
+
+    .day-heading h2 {
+        font-size: 24px;
+    }
+
+    .day-heading p {
+        font-size: 16px;
+    }
+
+    .story-content > p {
+        font-size: 17px;
+    }
+
+    .reels-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .polaroid-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        padding: 15px 5px;
+    }
+
+    .polaroid {
+        width: 100%;
+        max-width: 190px;
+        padding: 7px 7px 22px;
+    }
+
+    .polaroid img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .polaroid figcaption {
+        font-size: 13px;
+    }
+
+    .reel-label {
+        font-size: 11px;
+    }
+
+    .trip-ending {
+        padding: 50px 10px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - SMALL MOBILE
+========================================= */
+
+@media (max-width: 350px) {
+
+    body {
+        padding: 6px;
+    }
+
+    .headtitle h2 {
+        font-size: 27px;
+    }
+
+    .trip-intro h1 {
+        font-size: 30px;
+    }
+
+    .polaroid-gallery {
+        grid-template-columns: 1fr;
+        max-width: 220px;
+        margin: auto;
+    }
+
+    .polaroid {
+        max-width: 220px;
+    }
+
 }
