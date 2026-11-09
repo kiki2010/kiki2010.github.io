@@ -505,7 +505,7 @@ const projectData = {
       description: "",
       image: "img/events/2026_28.jpeg",
       award: "",
-      download: "",
+      download: "https://www.youtube.com/playlist?list=PLWEmDxSdfKWE",
       link2: "",
     },
   ]
