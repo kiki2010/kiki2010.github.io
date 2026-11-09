@@ -561,9 +561,17 @@ const talksData = [
     {
       title: "2026: La Voz || Streaming",
       description: "",
-      image: "img/events/2026_14.jpg",
+      image: "img/events/2026_24.jpg",
       award: "",
       download: "https://www.youtube.com/watch?v=kn76L31xQlI",
+      link2: "",
+    },
+    {
+      title: "2026: 4to Encuentro de Innovadores || VCP",
+      description: "",
+      image: "img/events/2026_28.jpeg",
+      award: "",
+      download: "",
       link2: "",
     },
 ];
